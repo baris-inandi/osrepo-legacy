@@ -13,7 +13,14 @@ def initialize():
     return repo, meta
 
 
-def search(entries: list, keyword: str, success_treshold=0.5):
+def visualize_search(search_result: list, elapsed: float):
+    for index, entry in enumerate(search_result):
+        index += 1
+        print(index, ": ", entry)
+    print(f"search done in {elapsed}.")
+
+
+def search(entries: list, keyword: str, success_treshold=0.67, limit=99):
     time_start = time()
     # parse keywords to a list
     result_dict, result_list = {}, []
@@ -34,8 +41,11 @@ def search(entries: list, keyword: str, success_treshold=0.5):
         elapsed = 0.01
 
     result_list.reverse()
+    result_list = result_list[:limit]
 
-    return result_list[:99], elapsed
+    visualize_search(result_list, elapsed)
+
+    return result_list, elapsed
 
 
 @click.command("install")
@@ -48,8 +58,6 @@ if __name__ == "__main__":
     # main()
     repo, meta = initialize()
     # all_os = index(repo)
-    result, elapsed = (search(repo, input("OSR >> ")))
-    for i in result:
-        print(i)
+    search(repo, input("OSR >> "))
 
     # print(search(all_os, "ubuntu"))
