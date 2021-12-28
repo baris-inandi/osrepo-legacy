@@ -1,4 +1,14 @@
 os:
+  Archy:
+    contributor: "freeturk"
+    description: "Simplicity over all."
+    versions:
+      latest: "https://arch.com/download"
+  Arçç:
+    contributor: "freeturk"
+    description: "Simplicity over all."
+    versions:
+      latest: "https://arch.com/download"
   Debian:
     contributor: "baris-inandi" # name of the contributor that added Debian.
     description: "The legendary distro by the debian community." # description if available.
