@@ -1,0 +1,321 @@
+# the great repo of all kinds of OSes, the legendary, the epic, the amazing osrepo.yaml!
+os:
+  Apple:
+    MacOS:
+      MacOS v1:
+        link: 'https://winworldpc.com/download/2d0fdb45-d5ff-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      MacOS v2:
+        link: 'https://winworldpc.com/download/2ee8da4a-d602-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      MacOS v3:
+        link: 'https://winworldpc.com/download/596c0afd-d604-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      MacOS v4:
+        link: 'https://winworldpc.com/download/4ecf1e22-d60b-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      MacOS v5:
+        link: 'https://winworldpc.com/download/fc4bafb8-d612-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      MacOS v6:
+        link: 'https://winworldpc.com/download/e91b7a2b-d7aa-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      MacOS v7:
+        link: 'https://winworldpc.com/download/c3b6c380-5fc3-a23f-c2ae-11c3a6e28094/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      MacOS v8:
+        link: 'https://winworldpc.com/download/a655424a-e64b-11e8-9b71-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      MacOS v9:
+        link: 'https://winworldpc.com/download/3dc3a37f-6518-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    MacOS X:
+      OSX 10.0 PPC:
+        link: 'https://winworldpc.com/download/3e20e280-a0c3-9718-c39a-11c3a4e284a2/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      OSX 10.1 PPC:
+        link: 'https://winworldpc.com/download/3dc3a60a-2c18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      OSX 10.2 PPC:
+        link: 'https://winworldpc.com/download/7d214cc5-bde2-809e-e280-a611c3a4c2ac/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      OSX 10.3 PPC:
+        link: 'https://linkmix.co/1489265'
+      OSX 10.4 PPC:
+        link: 'https://archive.org/download/macosx10.4tigerretaildvd/Mac%20OS%20X%2010.4%20Tiger%20Retail%20DVD.iso'
+      OSX 10.5:
+        link: 'https://archive.org/download/OsxLeopardInstall/osx%20leopard%20install.iso'
+      OSX 10.6:
+        link: 'https://archive.org/download/SnowLeopardInstall/snow%20leopard%20install.iso'
+      OSX 10.7:
+        link: 'https://5-9-2-202.xyz/themacgo/Mac_OS_X_Lion_10.7.2.dmg?md5=tsQQWOMla_pMDIBndu252Q&expires=1603996939'
+      OSX 10.8:
+        link: 'https://ovh.sundryfiles.com/rK?download_token=d3b64cf6a070d4e529b243b2f30a44a006b341318dcd7fea4cbf16c34913b3ed'
+      OSX 10.9:
+        link: 'https://archive.org/download/OSXMavericksESD/%5BOSX%5D%20Mac%20OS%20X%2010.9.4%20Mavericks%20ESD.dmg'
+      OSX 10.10:
+        link: 'https://download213.xyz/MAC/Yosemite_10.10.3.dmg'
+      OSX 10.11:
+        link: 'http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg'
+      OSX 10.12:
+        link: 'https://doc-0g-8k-docs.googleusercontent.com/docs/securesc/3c0uf8g5jscfbd977166g7nqsqsf631h/pn902b8psvi37nnfrt3aqp7c06gj52ta/1603878000000/15800933291929286564/03735844687554694997/19nLfflguts5X-xci_F3RK4dz3z020vGz?e=download&authuser=0&nonce=ardceav7prla2&user=03735844687554694997&hash=t47qbsnphbcis2aoh76jo4juhgtp74q9'
+      OSX 10.13:
+        link: 'http://download2345.mediafire.com/cp4x4i0cyt2g/4wuy42ubh7i41x0/macOS+High+Sierra+DMG+by+Geekrar.rar'
+      OSX 10.14:
+        link: 'https://isoriver.com/download-your-file-now/?url=https://archive.org/download/macOS_Mojave/macOS_Mojave.dmg'
+      OSX 10.15:
+        link: 'https://isoriver.com/download-your-file-now/?url=https://soft.uclv.edu.cu/isos/MacOS/macOS_Catalina_10.15_19A583.dmg'
+    MacOS 11:
+      11 PB1:
+        link: 'https://download2329.mediafire.com/uvmcvoygiq7g/vuxhn73malcin7w/macOS+Big+Sur+Beta+11.0+%2820A5343j%29.iso'
+      11.0.1:
+        link: 'http://www.mediafire.com/file/dbfod9u5q9ii9nd/macOS_Big_Sur_11.0.1_%252820B29%2529.iso/file'
+    other:
+      Server 1.0:
+        link: 'https://winworldpc.com/download/3dc39d24-c2bb-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      AUX 1:
+        link: 'https://winworldpc.com/download/c2bf03e2-809a-04c3-b9c3-8a11c3a6c2bb/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      AUX 2:
+        link: 'https://winworldpc.com/download/3e41e284-a238-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      AUX 3:
+        link: 'https://winworldpc.com/download/3e100254-18c3-9a11-c3a4-e284a2c3a570/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+  BSD:
+    FreeBSD:
+      link: 'https://download.freebsd.org/ftp/releases/ISO-IMAGES/12.2/'
+    OpenBSD:
+      link: 'https://www.openbsd.org/faq/faq4.html#Download'
+    LibertyBSD:
+      link: 'https://pub.allbsd.org/LibertyBSD/6.1/amd64/'
+    NetBSD:
+      link: 'https://www.netbsd.org'
+    DragonFlyBSD:
+      link: 'http://mirror-master.dragonflybsd.org/iso-images/dfly-x86_64-5.8.3_REL.iso'
+    TrueOS:
+      link: 'https://sourceforge.net/projects/archiveos/files/t/trueos/TrueOS-Desktop-18.03-x64-DVD.iso/download'
+    MidnightBSD:
+      link: 'https://www.midnightbsd.org/ftp/MidnightBSD/releases/'
+    m0n0wall:
+      link: 'https://m0n0.ch/wall/installation_cdrom.php'
+  linux:
+    Arch:
+      Arch:
+        link: 'https://arch.unixpeople.org/iso/2020.12.01/archlinux-2020.12.01-x86_64.iso'
+      EndeavourOS:
+        link: 'https://mirror.alpix.eu/endeavouros/iso/endeavouros-2020.09.20-x86_64.iso'
+      Manjaro:
+        XFCE:
+          link: 'https://manjaro.org/downloads/official/xfce/'
+        GNOME:
+          link: 'https://manjaro.org/downloads/official/gnome/'
+        KDE:
+          link: 'https://manjaro.org/downloads/official/kde/'
+        Manjaro Architect:
+          link: 'https://manjaro.org/downloads/official/architect/'
+      BlackArch:
+        link: 'https://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarch-linux-full-2020.12.01-x86_64.iso'
+    Debian:
+      Debian:
+        link: 'https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.7.0-amd64-netinst.iso'
+      Raspi:
+        Raspi Ubuntu:
+          link: 'https://ubuntu.com/download/raspberry-pi'
+        Raspberry Pi OS:
+          link: 'https://downloads.raspberrypi.org/raspios_full_armhf/images/raspios_full_armhf-2020-12-04/2020-12-02-raspios-buster-armhf-full.zip'
+        Raspberry Pi Deskop:
+          link: 'https://downloads.raspberrypi.org/rpd_x86/images/rpd_x86-2020-12-11/2020-12-11-raspios-buster-i386.iso'
+      Mint:
+        XFCE:
+          link: 'http://mirrors.seas.harvard.edu/linuxmint/stable/20/linuxmint-20-xfce-64bit.iso'
+        MATE:
+          link: 'http://mirrors.seas.harvard.edu/linuxmint/stable/20/linuxmint-20-mate-64bit.iso'
+      Parrot:
+        link: 'https://download.parrot.sh/parrot/iso/4.10/Parrot-home-4.10_amd64.iso'
+      Ubuntu:
+        Ubuntu Server:
+          link: 'https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-live-server-amd64.iso?_ga=2.240826115.1857678125.1608827650-830861523.1608827650'
+        Ubuntu LTS:
+          link: 'https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-desktop-amd64.iso?_ga=2.239646211.1857678125.1608827650-830861523.1608827650'
+        Ubuntu:
+          link: 'https://releases.ubuntu.com/20.10/ubuntu-20.10-desktop-amd64.iso'
+      Sabily:
+        link: 'https://sourceforge.net/projects/archiveos/files/s/sabily/sabily-10.10-desktop-amd64-ultimate.iso/download'
+      Biebian:
+        link: 'https://sourceforge.net/projects/biebian/files/JBL_1.0.iso/download'
+      Ubuntu Satanic:
+        link: 'https://sourceforge.net/projects/archiveos/files/u/ubuntu-satanic/satanic-undead-i386-666.9.iso/download'
+      Kali:
+        link: 'https://images.kali.org/virtual-images/kali-linux-2020.4-vmware-amd64.7z'
+      PureOS:
+        link: 'https://downloads.pureos.net/amber/live/gnome/2020-08-06/pureos-9.0-gnome-live_20200806-amd64.hybrid.iso'
+      deepin:
+        link: 'http://cdimage.deepin.com/releases/20/deepin-desktop-community-1002-amd64.iso'
+      Hannah Montana Linux:
+        link: 'http://www.tucows.com/thankyou.html?swid=611489'
+    Source Mage:
+      0.10.0:
+        link: 'http://mirror.sobukus.de/files/sourcemage/iso/x86/0.10.0/smgl-0.10.0.iso.bz2'
+      0.9.6:
+        link: 'http://mirror.sobukus.de/files/sourcemage/iso/x86/0.9.6/smgl-0.9.6.1-x86.iso.bz2'
+      0.9.5:
+        link: 'http://mirror.sobukus.de/files/sourcemage/iso/x86/0.9.5/smgl-0.9.5-i486.iso.bz2'
+    Red Hat:  
+      CentOS:
+        x86_64 8:
+          link: 'http://ftp.linux.org.tr/centos/8.2.2004/isos/x86_64/'
+        aarch64 8:
+          link: 'http://ftp.linux.org.tr/centos/8.2.2004/isos/aarch64/'
+        ppc64le 8:
+          link: 'http://ftp.linux.org.tr/centos/8.2.2004/isos/ppc64le/'
+        x86_64 7:
+          link: 'http://ftp.linux.org.tr/centos/7.8.2003/isos/x86_64/'
+        aarch64 7:
+          link: 'http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos-altarch/7.8.2003/isos/aarch64/'
+        ppc64le 7:
+          link: 'http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos-altarch/7.8.2003/isos/ppc64le/'
+        x86_64 6.10:
+          link: 'http://ftp.linux.org.tr/centos/6.10/isos/x86_64/'
+      Fedora:
+        Workstation:
+          x86_64:
+            link: 'https://download.fedoraproject.org/pub/fedora/linux/releases/33/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-33-1.2.iso'
+          aarch:
+            link: 'https://dl.fedoraproject.org/pub/fedora/linux/releases/33/Workstation/aarch64/images/Fedora-Workstation-33-1.3.aarch64.raw.xz'
+        Server:
+          x86_65:
+            link: 'https://download.fedoraproject.org/pub/fedora/linux/releases/33/Server/x86_64/iso/Fedora-Server-dvd-x86_64-33-1.2.iso'
+          aarch:
+            link: 'https://download.fedoraproject.org/pub/fedora/linux/releases/33/Server/aarch64/iso/Fedora-Server-dvd-aarch64-33-1.2.iso'
+        IoT:
+          x86_64:
+            link: 'https://download.fedoraproject.org/pub/alt/iot/33/IoT/x86_64/iso/Fedora-IoT-IoT-ostree-x86_64-33-20201215.0.iso'
+          aarch:
+            link: 'https://download.fedoraproject.org/pub/alt/iot/33/IoT/aarch64/iso/Fedora-IoT-IoT-ostree-aarch64-33-20201215.0.iso'
+          arm:
+            link: 'https://download.fedoraproject.org/pub/alt/iot/33/IoT/armhfp/iso/Fedora-IoT-IoT-ostree-armhfp-33-20201215.0.iso'
+    Pardus:
+      17.5 DDE:
+        link: 'http://indir.pardus.org.tr/ISO/Pardus17/Pardus-17.5-DDE-amd64.iso'
+      17.5 UVD XFCE:
+        link: 'http://indir.pardus.org.tr/ISO/Pardus17/Pardus-17.5-LTS-XFCE-amd64.iso'
+      19.3 GNOME:
+        link: 'http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-GNOME-amd64.iso'
+      19.3 XFCE:
+        link: 'http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-XFCE-amd64.iso'
+      19.3 Server:
+        link: 'http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-SERVER-amd64.iso'
+      ETAP 5.2:
+        link: 'http://indir.pardus.org.tr/ISO/Etap/Pardus-ETAP-5.2-amd64.iso'
+    Live Raizo:
+      11.20:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v11.20.10.21p.iso/download'
+      10.19:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v10.19.09.11p.iso/download'
+      9.18:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v9.18.09.09p.iso/download'
+      8.17:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v8.17.08.30p.iso/download'
+      7.16:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v7.16.09.11p.iso/download'
+      6.15:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v6.15.08.30p.iso/download'
+    Linux Lite:
+      5.0:
+        link: 'https://osdn.net/frs/redir.php?m=dotsrc&f=%2Fstorage%2Fg%2Fl%2Fli%2Flinuxlite%2F5.0%2Flinux-lite-5.0-64bit.iso'
+  Microsoft:
+    windos:
+      Windows 1.0:
+        link: 'https://archive.org/download/austin_1.01/1.01.zip'
+      Windows 2.03:
+        link: 'https://winworldpc.com/download/c3bec3ad-e280-a03a-e280-b05f11c3a4ef/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
+      Windows 3.0:
+        link: 'https://archive.org/download/windows3.0isofile/Windows%203.0.iso'
+      Windows 95:
+        link: 'https://winworldpc.com/download/48373a22-25c3-8911-c3a6-e280947e5254/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
+      Windows 98:
+        link: 'https://winworldpc.com/download/c3b4c382-3210-e280-9d7b-11c3a4c2ac5a/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
+    winnt:
+      Windows NT 3.51:
+        link: 'https://winworldpc.com/download/9c67f2a9-a8ec-11ea-8b3c-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      Windows NT 4.0:
+        link: 'https://winworldpc.com/download/4162c2ba-c3b7-18c3-9a11-c3a4e284a2ef/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
+      Windows 2000:
+        link: 'https://winworldpc.com/download/413638c2-8d18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      Windows Vista:
+        link: 'https://winworldpc.com/download/427424c3-9a18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      Neptune:
+        link: 'https://winworldpc.com/download/46c39b6a-7cc2-bbc3-9311-c3a4c2ac5a54/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      Windows XP:
+        link: 'https://winworldpc.com/download/422f790a-18c3-9a11-c3a4-e284a2c3a570/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      Windows 7:
+        link: 'https://dw.uptodown.com/dwn/b1GUY-_-pWrAOR03dOKW_2MLABYdGxGs4H6cDa7flXc4F6nbwemHAZhgwR0dNHstDyJT-TrR1BET9p1T0gq405IAJk7vCd6K47bJxmZA4hLSVUymzqAYEKEnmDlTjyKe/tqnn5XFoIVsOkLS6E52tc9mXAIOCSsc2fxKorYSBGgz3WsZRYEqq2TPFm3M3dL8QbIQaXP7REjPnwCGwBsZr-mA9oAViww8pFLhFJZmg9rjX1e38ucdq87IpB_GT7f2i/An3Bt7Gpge7wKB9gdYOuDqRB6QGLDA0JAOa1ROGxJyWwCbAOGKSsJXGFSFNKtY48PuudT_mtNkRGzWg0hdFq1facBVEpi5OkpBJzQiAMyhmV9U0ZuYA9jRlO8BsLlijn/'
+      Windows 8.1:
+        link: 'https://software-download.microsoft.com/pr/Win8.1_English_x64.iso?t=4637a485-401f-427d-aaaf-6b600a2a2884&e=1608905822&h=f0f68a5f7b43e0d1e340ef089d64a5d7'
+      Windows 10:
+        link: 'https://go.microsoft.com/fwlink/?LinkId=691209'
+    MS-DOS:
+      DOS:
+        MS-DOS v6.0:
+          link: 'https://winworldpc.com/download/40c396c3-9bc3-bd18-c39a-11c3a4e284a2/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
+        MS-DOS v6.22:
+          link: 'https://archive.org/download/MS_DOS_6.22_MICROSOFT/MS%20DOS%206.22.zip'
+      FreeDOS:
+        FreeDOS:
+          link: 'http://www.freedos.org/download/download/FD12CD.iso'
+  Haiku:
+    link: 'https://cdn.haiku-os.org/haiku-release/r1beta2/haiku-r1beta2-x86_64-anyboot.zip'
+  Google:
+    ChromeOS:
+      link: 'https://isoriver.com/download-your-file-now/?url=https://depositfiles.com/files/9noibr9ds'
+    Android:
+      link: 'https://www.fosshub.com/Android-x86.html?dwl=android-x86_64-9.0-r2.iso'
+  IBM:
+    OS/2 1.0:
+      link: 'https://winworldpc.com/download/c39463e2-809e-4016-c389-11c3a7cb86ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS/2 2.0:
+      link: 'https://winworldpc.com/download/226b07a0-66ca-11e8-a48f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS/2 3.0:
+      link: 'https://winworldpc.com/download/403bc2b5-c3bf-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS/2 Warp 4:
+      link: 'https://winworldpc.com/download/404e6cc2-af18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS400:
+      link: 'https://winworldpc.com/download/82cd938f-98ab-11ea-8c4a-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+  other:
+    ReactOS:
+      link: 'https://sourceforge.net/projects/reactos/files/latest/download'
+    Icaros:
+      link: 'http://www.icarosdesktop.com/icarosfiles/IcarosLive_2_2_8.zip'
+    MenuetOS:
+      link: 'http://www.menuetos.be/download.php?CurrentMenuetOS'
+    DexOS:
+      link: 'http://dex-os.github.io/DexOS.zip'
+    TempleOS:
+      link: 'https://templeos.org/Downloads/TempleOS.ISO'
+    Visopsys:
+      link: 'https://visopsys.org/files/visopsys/visopsys-0.9-iso.zip'
+    Kolibri:
+      link: 'http://builds.kolibrios.org/eng/latest-distr.7z'
+    SkyOS:
+      link: 'https://drive.google.com/u/0/uc?export=download&confirm=qder&id=1iEIJl-KlXdDmnkXuMkE9sUFne7JVNWyy'
+    MorphOS:
+      link: 'https://www.morphos-team.net/morphos-3.14.iso'
+    PC-MOS:
+      link: 'https://winworldpc.com/download/40e28099-2fc3-ac18-c39a-11c3a4e284a2/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    GEOS:
+      link: 'https://winworldpc.com/download/4073c2af-6d18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    GEM:
+      GEM 1:
+        link: 'https://winworldpc.com/download/7d2f5acb-864d-0411-c3a6-e280947e5254/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      GEM 3:
+        link: 'https://winworldpc.com/download/c3bdc39e-3ec2-a64d-0411-c3a6e280947e/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    Atari DOS:
+      link: 'https://winworldpc.com/download/46e282ac-7f53-c2b2-3711-c3a5c28f1352/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    BeOS:
+      link: 'https://winworldpc.com/download/4112c2a0-7118-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    Minix 3:
+      3.3.0:
+        link: 'http://download.minix3.org/iso/minix_R3.3.0-588a35b.iso.bz2'
+      3.2.1:
+        link: 'http://download.minix3.org/iso/minix_R3.2.1-972156d.iso.bz2'
+    Bell Labs:
+      Plan 9:
+        CD image:
+          link: 'https://9p.io/plan9/download/plan9.iso.bz2'
+        USB image:
+          link: 'https://9p.io/plan9/download/usbdisk.bz2'
+        Floppy image:
+          link: 'https://9p.io/plan9/download/plan9.flp.gz'
+meta:
+  authors:
+    - baris-inandi
+    - FreeTurk
+  about: |
+    A community driven project on bringing many OSes into one package. Now with less calories! Wear your seatbelts, this is going to be one of the most common repos! Made with <3 by @baris-inandi and @FreeTurk 
+  updated: 01-15-2021
