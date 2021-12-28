@@ -1,0 +1,11 @@
+osr:
+  ArchC:
+    description: "some os by the community"
+    added_by: "freeturk"
+    versions:
+      rolling:
+        url: "https://arch.com/community/download"
+        contributor: "freeturk"
+      old_version:
+        url: "https://arch.com/community/some_old_iso"
+        contributor: "baris-inandi"

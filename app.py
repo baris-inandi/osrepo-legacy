@@ -1,51 +1,22 @@
-import click
-from time import time
-from difflib import SequenceMatcher as matcher
 import yaml
-from collections import OrderedDict
+import click
+from modules.search import search
 
 
-def initialize():
+def load_repo():
+    # load core repo
     with open("osrepo.yaml", "r") as stream:
-        loaded_data = yaml.safe_load(stream)
-    repo = loaded_data["os"]
-    meta = loaded_data["meta"]
-    return repo, meta
+        core_repo = yaml.safe_load(stream)
+    for key in core_repo["osr"]:
+        core_repo["osr"][key]["repo"] = "core"
 
+    # load community repo
+    with open("community.yaml", "r") as stream:
+        community_repo = yaml.safe_load(stream)
+    for key in community_repo["osr"]:
+        community_repo["osr"][key]["repo"] = "community"
 
-def visualize_search(search_result: list, elapsed: float):
-    for index, entry in enumerate(search_result):
-        index += 1
-        print(index, ": ", entry)
-    print(f"search done in {elapsed}.")
-
-
-def search(entries: list, keyword: str, success_treshold=0.67, limit=99):
-    time_start = time()
-    # parse keywords to a list
-    result_dict, result_list = {}, []
-    for entry_id in entries:
-        match = matcher(None, entry_id.lower(), keyword.lower()).ratio()
-        if match >= success_treshold:
-            result_dict[match] = entry_id
-
-    # order matching entries
-    ordered_index = OrderedDict(sorted(result_dict.items()))
-    for i in ordered_index:
-        result_list.append(result_dict[i])
-
-    # end time
-    time_end = time()
-    elapsed = round(time_end - time_start, 2)
-    if elapsed == 0:
-        elapsed = 0.01
-
-    result_list.reverse()
-    result_list = result_list[:limit]
-
-    visualize_search(result_list, elapsed)
-
-    return result_list, elapsed
+    return {**community_repo["osr"], **core_repo["osr"]}
 
 
 @click.command("install")
@@ -55,9 +26,5 @@ def main(name):
 
 
 if __name__ == "__main__":
-    # main()
-    repo, meta = initialize()
-    # all_os = index(repo)
+    repo = load_repo()
     search(repo, input("OSR >> "))
-
-    # print(search(all_os, "ubuntu"))

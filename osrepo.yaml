@@ -1,30 +1,21 @@
-os:
-  Archy:
-    contributor: "freeturk"
-    description: "Simplicity over all."
-    versions:
-      latest: "https://arch.com/download"
-  Arçç:
-    contributor: "freeturk"
-    description: "Simplicity over all."
-    versions:
-      latest: "https://arch.com/download"
+osr:
   Debian:
-    contributor: "baris-inandi" # name of the contributor that added Debian.
     description: "The legendary distro by the debian community." # description if available.
     versions:
-      bullseye: "https://debian.com/bullseye" # This creates an os entry called "Debian@bullseye"
-      buster: "https://debian.com/buster"
+      bullseye:
+        url: "https://debian.com/bullseye" # This creates an os entry called "Debian@bullseye"
+      buster:
+        url: "https://debian.com/buster"
   Arch:
-    contributor: "freeturk"
     description: "Simplicity over all."
     versions:
-      latest: "https://arch.com/download"
+      latest:
+        url: "https://arch.com/download"
 
 meta:
   authors:
     - baris-inandi
     - FreeTurk
   about: |
-    A community driven project on bringing many OSs into one package. Now with less calories! Made with <3 by @baris-inandi and @FreeTurk 
+    A community driven project on bringing many OSs into one package. Now with less calories! Made with <3 by @baris-inandi and @FreeTurk
   updated: 28-12-2021
