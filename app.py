@@ -1,67 +1,7 @@
 import click
-import re
 from time import time
-import string
 from difflib import SequenceMatcher as matcher
 import yaml
-
-
-def removeduplicate(list):
-    new = []
-    for i in list:
-        if i not in new:
-            new.append(i)
-    return new
-
-
-def search(os_list, keywords_input, success_treshold=0.67):
-    start_time = time()
-    # initial definitions
-    filtered_input = []
-    passed_filter = []
-
-    # filter the input
-    keywords = keywords_input[len("search ".lower()):].split(",")
-    for keyword in keywords:
-        proper_keyword = keyword.strip("\'").strip("\"").strip(" ")
-        filtered_input.append(proper_keyword)
-    print(filtered_input, "\n\n")
-
-    # filter the OSes
-    for path in os_list:
-        print("os path in operation: \t", path)
-        filtered = list(filter(None, re.split(' > ', path)))
-        filtered_word_sensitive = re.sub('[' + string.punctuation + ']', '> ',
-                                         path).split()
-        while ">" in filtered:
-            filtered == filtered.remove(">")
-        while ">" in filtered_word_sensitive:
-            filtered_word_sensitive == filtered_word_sensitive.remove(">")
-        print("keywords:\t\t ", filtered)
-        print("word sensitive:\t\t ", filtered_word_sensitive)
-        print("inputed keywords:\t ", filtered_input)
-
-        # compare the values
-        all_filtered = removeduplicate(filtered_word_sensitive + filtered)
-        print("----------------------------------------------")
-        print("success_treshold = ", success_treshold)
-        for item in all_filtered:
-            for keyword in filtered_input:
-                matchval = round(
-                    matcher(None, keyword.lower(), item.lower()).ratio(), 3)
-                if matchval >= success_treshold:
-                    passed_filter.append(path)
-        print("\n\n")
-
-    # finalize
-    out = list(removeduplicate(passed_filter))
-    if len(out) != 0:
-        info, success = str("{} results found in {} seconds".format(
-            str(len(out)), str(round(float(time.time() - start_time),
-                                     3)))), True
-    else:
-        info, success = "No search results found", False
-    return success, out, info
 
 
 def initialize():
@@ -72,13 +12,21 @@ def initialize():
     return repo, meta
 
 
-def index(dictionary, key='link'):
-    if key in dictionary:
-        yield ""
-    for k, v in dictionary.items():
-        if isinstance(v, dict):
-            for s in index(v, key):
-                yield f" > {k}{s}"
+def search(entries: list, keywords: str, success_treshold=0.67):
+    time_start = time()
+    # parse keywords to a list
+    keywords_parsed = ["ubuntu", "Debian", "arçh"]
+    for entry_id in entries:
+        for keyword in keywords_parsed:
+            match = matcher(None, entry_id.lower(), keyword.lower()).ratio()
+            if match >= success_treshold:
+                print(f"{keyword} is similar to {entry_id}")
+    # finish timing
+    time_end = time()
+    elapsed = round(time_end - time_start, 2)
+    if elapsed == 0:
+        elapsed = 0.01
+    return ["result", "oss", "in", "order"], elapsed
 
 
 @click.command("install")
@@ -90,5 +38,6 @@ def main(name):
 if __name__ == "__main__":
     # main()
     repo, meta = initialize()
-    all_os = index(repo)
-    print(search(all_os, "ubuntu"))
+    # all_os = index(repo)
+    print(search(repo, "uwu"))
+    # print(search(all_os, "ubuntu"))
