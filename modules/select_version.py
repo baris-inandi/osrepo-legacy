@@ -1,5 +1,6 @@
 from modules.fmt import format_repo_name, Fmt
 from modules.repo import repo
+import inquirer
 
 
 def select_version(entry: str):
