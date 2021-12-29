@@ -1,3 +1,6 @@
+from modules.repo import repo
+
+
 class Fmt:
     colors = {
         "HEADER": '\033[95m',
@@ -37,3 +40,9 @@ class Fmt:
     @classmethod
     def color(cls, color: str, msg: str):
         return cls.colors[color.upper()] + msg + cls.colors["DEFAULT"]
+
+
+def format_repo_name(entry: str):
+    entry_data = repo[entry]
+    repo_color = "cyan" if entry_data["repo"] == "core" else "red"
+    return f"{Fmt.color(repo_color, entry_data['repo'])}/{entry}"

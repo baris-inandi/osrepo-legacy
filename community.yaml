@@ -3,7 +3,7 @@ osr:
     description: "some os by the community"
     added_by: "freeturk"
     versions:
-      rolling:
+      latest:
         url: "https://arch.com/community/download"
         contributor: "freeturk"
       old_version:

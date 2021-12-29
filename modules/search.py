@@ -2,16 +2,14 @@ from time import time
 from difflib import SequenceMatcher as matcher
 from collections import OrderedDict
 from modules.fmt import Fmt
+from modules.repo import repo
 
 
-def search(entries: dict[str, dict],
-           keyword: str,
-           success_treshold=0.65,
-           limit=99):
+def search(keyword: str, success_treshold=0.5, limit=50):
     time_start = time()
     # parse keywords to a list
     result_dict, result_list = {}, []
-    for entry_id in entries:
+    for entry_id in repo:
         match = matcher(None, entry_id.lower(), keyword.lower()).ratio()
         if match >= success_treshold:
             result_dict[match] = entry_id
@@ -30,16 +28,15 @@ def search(entries: dict[str, dict],
     result_list.reverse()
     result_list = result_list[:limit]
 
-    visualize_search(entries, result_list, elapsed)
+    selected = visualize_search(result_list, elapsed)
 
-    return result_list, elapsed
+    return selected, result_list, elapsed
 
 
-def visualize_search(repo_scope: dict[str, dict], search_result: list[str],
-                     elapsed: float):
+def visualize_search(search_result: list[str], elapsed: float):
     for index, entry in enumerate(search_result):
         index += 1
-        entry_data = repo_scope[entry]
+        entry_data = repo[entry]
         # create a repo name string in the following format:
         # number repo/name
         repo_color = "cyan" if entry_data["repo"] == "core" else "red"
@@ -64,3 +61,5 @@ def visualize_search(repo_scope: dict[str, dict], search_result: list[str],
         print(repo_name + versions)
         print(description)
     print(f"search done in {elapsed}s.")
+    # TODO: return selected distro name
+    return "Arch"
