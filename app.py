@@ -1,6 +1,6 @@
 import click
 from modules.search import search
-from modules.select_version import select_version
+from modules import select
 
 
 @click.command("install")
@@ -10,5 +10,10 @@ def main(name):
 
 
 if __name__ == "__main__":
-    selected, _, _ = search(input("OSR >> "))
-    select_version(selected)
+    search_result, elapsed = search(input("OSR >> "))
+    if len(search_result) > 0:
+        selected_os = select.select_os(search_result, elapsed)
+        selected_version = select.select_os_version(selected_os)
+        download_url = select.confirm_download(selected_os, selected_version)
+    else:
+        print("No results found.")

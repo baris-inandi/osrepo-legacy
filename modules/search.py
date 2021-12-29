@@ -1,7 +1,6 @@
 from time import time
 from difflib import SequenceMatcher as matcher
 from collections import OrderedDict
-from modules.fmt import Fmt
 from modules.repo import repo
 
 
@@ -28,38 +27,4 @@ def search(keyword: str, success_treshold=0.5, limit=50):
     result_list.reverse()
     result_list = result_list[:limit]
 
-    selected = visualize_search(result_list, elapsed)
-
-    return selected, result_list, elapsed
-
-
-def visualize_search(search_result: list[str], elapsed: float):
-    for index, entry in enumerate(search_result):
-        index += 1
-        entry_data = repo[entry]
-        # create a repo name string in the following format:
-        # number repo/name
-        repo_color = "cyan" if entry_data["repo"] == "core" else "red"
-        repo_name = Fmt.color('header', str(
-            index)) + f" {Fmt.color(repo_color, entry_data['repo'])}/{entry}"
-        # generate a repo description in the following format:
-        # [from Name Surname] description text comes here
-        if entry_data["repo"] == "community":
-            added_by = f"{entry_data['added_by']}"
-            desc_trail = Fmt.color("green", f"[added by {added_by}] ")
-        else:
-            desc_trail = ""
-        description = f"  {desc_trail}{entry_data['description'][:150]}"
-        # number of available versions
-        versions_count = len(entry_data["versions"])
-        if versions_count > 1:
-            versions = Fmt.color("blue",
-                                 f" ({versions_count} version(s) available)")
-        else:
-            versions = Fmt.color("blue",
-                                 f" {list(entry_data['versions'].keys())[0]}")
-        print(repo_name + versions)
-        print(description)
-    print(f"search done in {elapsed}s.")
-    # TODO: return selected distro name
-    return "Arch"
+    return result_list, elapsed
