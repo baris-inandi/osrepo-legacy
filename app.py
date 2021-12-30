@@ -9,4 +9,4 @@ def main(name):
 
 
 if __name__ == "__main__":
-    cli.search_os(input("> "))
+    cli.list_all()

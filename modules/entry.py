@@ -21,8 +21,12 @@ class Entry:
             desc_trail = Fmt.color("green", f"[published by {added_by}] ")
         else:
             desc_trail = ""
-        if self.meta["proprietary"] is True:
-            desc_trail = Fmt.color("yellow", "[proprietary] ") + desc_trail
+        try:
+            if self.meta["proprietary"] is True:
+                proprietary_warning = Fmt.color("yellow", "[proprietary] ")
+        except Exception:
+            proprietary_warning = ""
+        desc_trail = proprietary_warning + desc_trail
         return f"  {desc_trail}{self.meta['description'][:150]}"
 
     # (19 versions available)
