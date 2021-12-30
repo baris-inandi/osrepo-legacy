@@ -1,9 +1,13 @@
 from modules import select
 from modules.search import search
-from modules.abort import abort
+from modules.tools import abort
+from modules.repo import repo
+from modules.entry import Entry
+from modules.fmt import Fmt
+from modules.tools import confirm
 
 
-def os_search(keyword: str):
+def search_os(keyword: str):
     # osr list arch
 
     # returns the download URL of selected os/version.
@@ -22,7 +26,12 @@ def list_all():
 
     # get confirmation:
     # [?] This will print out all the available OS entries. Are you sure?
-    pass
+    if confirm(msg="This will print out ALL OS entries. Are you sure?",
+               default=False):
+        for index, name in enumerate(repo.keys()):
+            print(Fmt.color("header", str(index + 1)), Entry(name))
+    else:
+        abort("Aborted by user.")
 
 
 def download_with_id():

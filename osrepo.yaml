@@ -1,16 +1,70 @@
 osr:
-  Debian:
-    description: "The legendary distro by the debian community." # description if available.
+  MacOS:
+    proprietary: true
+    description: "The proprietary graphical operating system developed and marketed by Apple Inc."
     versions:
-      bullseye:
-        url: "https://debian.com/bullseye" # This creates an os entry called "Debian@bullseye"
-      buster:
-        url: "https://debian.com/buster"
-  Arch:
-    description: "Simplicity over all."
-    versions:
-      latest:
-        url: "https://arch.com/download"
+      v1:
+        url: 'https://winworldpc.com/download/2d0fdb45-d5ff-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      v2:
+        url: 'https://winworldpc.com/download/2ee8da4a-d602-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      v3:
+        url: 'https://winworldpc.com/download/596c0afd-d604-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      v4:
+        url: 'https://winworldpc.com/download/4ecf1e22-d60b-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      v5:
+        url: 'https://winworldpc.com/download/fc4bafb8-d612-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      v6:
+        url: 'https://winworldpc.com/download/e91b7a2b-d7aa-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      v7:
+        url: 'https://winworldpc.com/download/c3b6c380-5fc3-a23f-c2ae-11c3a6e28094/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      v8:
+        url: 'https://winworldpc.com/download/a655424a-e64b-11e8-9b71-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      v9:
+        url: 'https://winworldpc.com/download/3dc3a37f-6518-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      OSX 10.0 PPC:
+        url: 'https://winworldpc.com/download/3e20e280-a0c3-9718-c39a-11c3a4e284a2/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      OSX 10.1 PPC:
+        url: 'https://winworldpc.com/download/3dc3a60a-2c18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      OSX 10.2 PPC:
+        url: 'https://winworldpc.com/download/7d214cc5-bde2-809e-e280-a611c3a4c2ac/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      OSX 10.3 PPC:
+        url: 'https://linkmix.co/1489265'
+      OSX 10.4 PPC:
+        url: 'https://archive.org/download/macosx10.4tigerretaildvd/Mac%20OS%20X%2010.4%20Tiger%20Retail%20DVD.iso'
+      OSX 10.5:
+        url: 'https://archive.org/download/OsxLeopardInstall/osx%20leopard%20install.iso'
+      OSX 10.6:
+        url: 'https://archive.org/download/SnowLeopardInstall/snow%20leopard%20install.iso'
+      OSX 10.7:
+        url: 'https://5-9-2-202.xyz/themacgo/Mac_OS_X_Lion_10.7.2.dmg?md5=tsQQWOMla_pMDIBndu252Q&expires=1603996939'
+      OSX 10.8:
+        url: 'https://ovh.sundryfiles.com/rK?download_token=d3b64cf6a070d4e529b243b2f30a44a006b341318dcd7fea4cbf16c34913b3ed'
+      OSX 10.9:
+        url: 'https://archive.org/download/OSXMavericksESD/%5BOSX%5D%20Mac%20OS%20X%2010.9.4%20Mavericks%20ESD.dmg'
+      OSX 10.10:
+        url: 'https://download213.xyz/MAC/Yosemite_10.10.3.dmg'
+      OSX 10.11:
+        url: 'http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg'
+      OSX 10.12:
+        url: 'https://doc-0g-8k-docs.googleusercontent.com/docs/securesc/3c0uf8g5jscfbd977166g7nqsqsf631h/pn902b8psvi37nnfrt3aqp7c06gj52ta/1603878000000/15800933291929286564/03735844687554694997/19nLfflguts5X-xci_F3RK4dz3z020vGz?e=download&authuser=0&nonce=ardceav7prla2&user=03735844687554694997&hash=t47qbsnphbcis2aoh76jo4juhgtp74q9'
+      OSX 10.13:
+        url: 'http://download2345.mediafire.com/cp4x4i0cyt2g/4wuy42ubh7i41x0/macOS+High+Sierra+DMG+by+Geekrar.rar'
+      OSX 10.14:
+        url: 'https://isoriver.com/download-your-file-now/?url=https://archive.org/download/macOS_Mojave/macOS_Mojave.dmg'
+      OSX 10.15:
+        url: 'https://isoriver.com/download-your-file-now/?url=https://soft.uclv.edu.cu/isos/MacOS/macOS_Catalina_10.15_19A583.dmg'
+      v11 Public Beta 1:
+        url: 'https://download2329.mediafire.com/uvmcvoygiq7g/vuxhn73malcin7w/macOS+Big+Sur+Beta+11.0+%2820A5343j%29.iso'
+      v11.0.1:
+        url: 'http://www.mediafire.com/file/dbfod9u5q9ii9nd/macOS_Big_Sur_11.0.1_%252820B29%2529.iso/file'
+      Server 1.0:
+        url: 'https://winworldpc.com/download/3dc39d24-c2bb-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      AUX 1:
+        url: 'https://winworldpc.com/download/c2bf03e2-809a-04c3-b9c3-8a11c3a6c2bb/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      AUX 2:
+        url: 'https://winworldpc.com/download/3e41e284-a238-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      AUX 3:
+        url: 'https://winworldpc.com/download/3e100254-18c3-9a11-c3a4-e284a2c3a570/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
 
 meta:
   authors:

@@ -14,13 +14,15 @@ class Entry:
         repo_color = "cyan" if self.meta["repo"] == "core" else "red"
         return f"{Fmt.color(repo_color, self.meta['repo'])}/{self.name}"
 
-    # [published by baris-inandi] some os that can do some things
+    # [proprietary][published by baris-inandi] some os that can do some things
     def formatted_description(self):
         if self.is_community:
             added_by = f"{self.meta['added_by']}"
             desc_trail = Fmt.color("green", f"[published by {added_by}] ")
         else:
             desc_trail = ""
+        if self.meta["proprietary"] is True:
+            desc_trail = Fmt.color("yellow", "[proprietary] ") + desc_trail
         return f"  {desc_trail}{self.meta['description'][:150]}"
 
     # (19 versions available)
