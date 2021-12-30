@@ -1,5 +1,6 @@
 from modules.entry import Entry
 from modules.fmt import Fmt
+from modules.abort import abort
 import inquirer
 
 
@@ -10,10 +11,11 @@ def select_os(search_result: list[str], elapsed: float):
         entries.append(current_entry)
         print(Fmt.color("header", str(index + 1)), current_entry)
     print(f"search done in {elapsed}s.")
-    # get selection information here
-    # TODO: input() should be replaced with the user selection
-    _x = int(input("select an os: ")) - 1
-    return entries[_x]
+    user_selection = int(input("select an os (enter number): ")) - 1
+    try:
+        return entries[user_selection]
+    except Exception:
+        abort()
 
 
 def select_os_version(entry: Entry):
@@ -23,10 +25,11 @@ def select_os_version(entry: Entry):
         print(Fmt.color("header", str(index + 1)),
               entry.formatted_version(version))
         version_urls.append(version)
-    # get selection information here
-    # TODO: input() should be replaced with the user selection
-    _x = int(input("select version: ")) - 1
-    return version_urls[_x]
+    user_selection = int(input("select version (enter number): ")) - 1
+    try:
+        return version_urls[user_selection]
+    except Exception:
+        abort()
 
 
 def confirm_download(entry: Entry, version: str):
@@ -50,9 +53,8 @@ def confirm_download(entry: Entry, version: str):
                          message="Do you want to proceed?",
                          default=True)
     ])
-    print()
 
     if not confirmation["is_confirmed"]:
-        print("aborted by user.")
+        abort("Aborted by user.")
     else:
         return download_url

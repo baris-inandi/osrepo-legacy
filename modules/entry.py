@@ -26,7 +26,7 @@ class Entry:
     # (19 versions available)
     def formatted_version_count(self):
         versions_count = len(self.meta["versions"])
-        return (Fmt.color("blue", f" ({versions_count} version(s) available)")
+        return (Fmt.color("blue", f" ({versions_count} versions available)")
                 if versions_count > 1 else Fmt.color(
                     "blue", f" {list(self.meta['versions'].keys())[0]}"))
 
