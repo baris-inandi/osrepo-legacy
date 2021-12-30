@@ -111,28 +111,61 @@ osr:
     description: "A group of proprietary graphical operating systems, by Microsoft"
     versions:
       NT 3.51:
-        link: 'https://winworldpc.com/download/9c67f2a9-a8ec-11ea-8b3c-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+        url: 'https://winworldpc.com/download/9c67f2a9-a8ec-11ea-8b3c-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
       NT 4.0:
-        link: 'https://winworldpc.com/download/416031c2-ab18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+        url: 'https://winworldpc.com/download/416031c2-ab18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
       "2000":
-        link: 'https://winworldpc.com/download/413638c2-8d18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+        url: 'https://winworldpc.com/download/413638c2-8d18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
       Vista:
-        link: 'https://winworldpc.com/download/427424c3-9a18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+        url: 'https://winworldpc.com/download/427424c3-9a18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
       Neptune:
-        link: 'https://winworldpc.com/download/46c39b6a-7cc2-bbc3-9311-c3a4c2ac5a54/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+        url: 'https://winworldpc.com/download/46c39b6a-7cc2-bbc3-9311-c3a4c2ac5a54/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
       XP:
-        link: 'https://winworldpc.com/download/422f790a-18c3-9a11-c3a4-e284a2c3a570/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+        url: 'https://winworldpc.com/download/422f790a-18c3-9a11-c3a4-e284a2c3a570/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
       "7":
-        link: 'https://dw.uptodown.com/dwn/b1GUY-_-pWrAOR03dOKW_2MLABYdGxGs4H6cDa7flXc4F6nbwemHAZhgwR0dNHstDyJT-TrR1BET9p1T0gq405IAJk7vCd6K47bJxmZA4hLSVUymzqAYEKEnmDlTjyKe/tqnn5XFoIVsOkLS6E52tc9mXAIOCSsc2fxKorYSBGgz3WsZRYEqq2TPFm3M3dL8QbIQaXP7REjPnwCGwBsZr-mA9oAViww8pFLhFJZmg9rjX1e38ucdq87IpB_GT7f2i/An3Bt7Gpge7wKB9gdYOuDqRB6QGLDA0JAOa1ROGxJyWwCbAOGKSsJXGFSFNKtY48PuudT_mtNkRGzWg0hdFq1facBVEpi5OkpBJzQiAMyhmV9U0ZuYA9jRlO8BsLlijn/'
+        url: 'https://dw.uptodown.com/dwn/b1GUY-_-pWrAOR03dOKW_2MLABYdGxGs4H6cDa7flXc4F6nbwemHAZhgwR0dNHstDyJT-TrR1BET9p1T0gq405IAJk7vCd6K47bJxmZA4hLSVUymzqAYEKEnmDlTjyKe/tqnn5XFoIVsOkLS6E52tc9mXAIOCSsc2fxKorYSBGgz3WsZRYEqq2TPFm3M3dL8QbIQaXP7REjPnwCGwBsZr-mA9oAViww8pFLhFJZmg9rjX1e38ucdq87IpB_GT7f2i/An3Bt7Gpge7wKB9gdYOuDqRB6QGLDA0JAOa1ROGxJyWwCbAOGKSsJXGFSFNKtY48PuudT_mtNkRGzWg0hdFq1facBVEpi5OkpBJzQiAMyhmV9U0ZuYA9jRlO8BsLlijn/'
       "8.1":
-        link: 'https://software-download.microsoft.com/pr/Win8.1_English_x64.iso?t=4637a485-401f-427d-aaaf-6b600a2a2884&e=1608905822&h=f0f68a5f7b43e0d1e340ef089d64a5d7'
+        url: 'https://software-download.microsoft.com/pr/Win8.1_English_x64.iso?t=4637a485-401f-427d-aaaf-6b600a2a2884&e=1608905822&h=f0f68a5f7b43e0d1e340ef089d64a5d7'
       "10":
-        link: 'https://go.microsoft.com/fwlink/?LinkId=691209'
+        url: 'https://go.microsoft.com/fwlink/?LinkId=691209'
 
   Chromium OS:
     description: "Open source implementation of Google's ChromeOS"
     versions:
-      "20211219231228": "https://chromium.arnoldthebat.co.uk/daily//CARMOS-20211219231228.img.7z"
+      "20211219231228":
+        url: "https://chromium.arnoldthebat.co.uk/daily//CARMOS-20211219231228.img.7z"
+
+  FreeBSD:
+    description: "A Unix-like operating system descended from BSD"
+    versions:
+      # TODO: browser: true should make the url open in the browser instead of being directly downloaded.
+      v12.0:
+        browser: true
+        url: 'https://download.freebsd.org/ftp/releases/ISO-IMAGES/12.0/'
+      v12.1:
+        browser: true
+        url: 'https://download.freebsd.org/ftp/releases/ISO-IMAGES/12.1/'
+      v12.2:
+        browser: true
+        url: 'https://download.freebsd.org/ftp/releases/ISO-IMAGES/12.2/'
+      v12.3:
+        browser: true
+        url: 'https://download.freebsd.org/ftp/releases/ISO-IMAGES/12.3/'
+      v11.2:
+        browser: true
+        url: 'https://download.freebsd.org/ftp/releases/ISO-IMAGES/11.2/'
+      v11.3:
+        browser: true
+        url: 'https://download.freebsd.org/ftp/releases/ISO-IMAGES/11.3/'
+      v11.4:
+        browser: true
+        url: 'https://download.freebsd.org/ftp/releases/ISO-IMAGES/11.4/'
+
+  TempleOS:
+    description: "A biblical-themed operating system designed to be the Third Temple prophesied in the Bible"
+    versions:
+      latest:
+        url: 'https://templeos.org/Downloads/TempleOS.ISO'
 
 meta:
   authors:
