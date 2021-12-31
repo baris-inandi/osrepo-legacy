@@ -40,4 +40,4 @@ def download_with_id(os_id: str):
     os_id = os_id.lower()
     os_id_list = os_id.split("@", 1)
     os_name, os_version = os_id_list[0], os_id_list[1]
-    print(repo[os_name]["versions"][os_version])
+    print(repo.lower[os_name]["versions"][os_version])
