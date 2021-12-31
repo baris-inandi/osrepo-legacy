@@ -22,6 +22,7 @@ class Entry:
         else:
             desc_trail = ""
         try:
+            # the "is True" is required because ["proprietary"] can be None
             if self.meta["proprietary"] is True:
                 proprietary_warning = Fmt.color("yellow", "[proprietary] ")
         except Exception:

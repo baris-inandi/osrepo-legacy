@@ -1,5 +1,5 @@
 osr:
-  MacOS:
+  macOS:
     proprietary: true
     description: "A graphical operating system developed by Apple Inc."
     versions:
