@@ -1,8 +1,4 @@
 from yaml import safe_load as load_yaml
-from modules.tools import abort
-from modules.entry import Entry
-from modules.fmt import Fmt
-from modules.tools import confirm
 
 
 class Repo:
@@ -22,14 +18,6 @@ class Repo:
         for key in loaded["osr"]:
             loaded["osr"][key]["repo"] = repo_name
         return loaded["osr"]
-
-    def list_all(self):
-        # TODO: abort not working
-        if confirm(msg="This will print out *ALL* OS entries. Are you sure?"):
-            for index, name in enumerate(self.repo.keys()):
-                print(Fmt.color("header", str(index + 1)), Entry(name), "\n")
-        else:
-            abort("Aborted by user.")
 
 
 repo_object = Repo([("community.yaml", "community"), ("osrepo.yaml", "core")])
