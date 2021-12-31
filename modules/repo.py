@@ -10,6 +10,7 @@ class Repo:
             sub_repo_list.append(self.parse(*file))
         for sub_repo in sub_repo_list:
             repo.update(sub_repo)
+        self.lower = {k.lower(): v for k, v in repo}
         self.repo = repo
 
     def parse(self, filename: str, repo_name: str):

@@ -30,11 +30,14 @@ def list_all():
         abort("Aborted by user.")
 
 
-def download_with_id():
+def download_with_id(os_id: str):
     # TODO:
     # osr install pureos@2.0.0
     # or
     # osr install pureos -> triggers select.select_os_version()
 
     # TODO: select.confirm_download() should be called here
-    pass
+    os_id = os_id.lower()
+    os_id_list = os_id.split("@", 1)
+    os_name, os_version = os_id_list[0], os_id_list[1]
+    print(repo[os_name]["versions"][os_version])

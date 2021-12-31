@@ -9,4 +9,4 @@ def main(name):
 
 
 if __name__ == "__main__":
-    cli.list_all()
+    cli.download_with_id(input("> "))
