@@ -1,10 +1,11 @@
 from modules import select
 from modules.search import search
 from modules.tools import abort
-from modules.repo import repo
+from modules.repo import repo, repo_object
 from modules.entry import Entry
 from modules.fmt import Fmt
 from modules.tools import confirm
+from modules.select import select_os_version, confirm_download
 
 
 def search_os(keyword: str):
@@ -31,13 +32,19 @@ def list_all():
 
 
 def download_with_id(os_id: str):
-    # TODO:
-    # osr install pureos@2.0.0
-    # or
-    # osr install pureos -> triggers select.select_os_version()
+    # osr install Windows@10
+    # osr install Windows
+    try:
+        os_id_list = os_id.split("@", 1)
+        os_name = os_id_list[0]
+        current_entry = Entry(os_name)
 
-    # TODO: select.confirm_download() should be called here
-    os_id = os_id.lower()
-    os_id_list = os_id.split("@", 1)
-    os_name, os_version = os_id_list[0], os_id_list[1]
-    print(repo.lower[os_name]["versions"][os_version])
+        version_specified = len(os_id_list) >= 2
+        if version_specified:
+            print(current_entry.formatted_version(os_id_list[1]))
+            version = os_id_list[1]
+        else:
+            version = select_os_version(current_entry)
+        return confirm_download(current_entry, version)
+    except Exception:
+        abort()
