@@ -31,22 +31,27 @@ def select_os_version(entry: Entry):
         abort()
 
 
-def confirm_download(entry: Entry, version: str):
+def confirm_download(entry: Entry, version: str, browser: bool = False):
     download_url = entry.versions[version]["url"]
     print()
     print("Selected version:", Fmt.underline(version))
 
     if entry.is_community:
-        print()
         Fmt.complain(
             "WARN",
             "This is a community OS. The download URL may not be reviewed.")
         Fmt.complain(
             "WARN",
             "Make sure you trust the author and check if the URL is safe.")
-    Fmt.complain("INFO", "The OS will be downloaded from the following URL:")
+    if browser:
+        Fmt.complain("WARN", "This entry does not have a direct download url.")
+        Fmt.complain("WARN", "The url will be opened in your browser.")
+        last_warning = "The following URL will be opened in your browser:"
+    else:
+        last_warning = "The OS will be downloaded from the following URL:"
+    Fmt.complain("INFO", last_warning)
     Fmt.complain("INFO", Fmt.underline(download_url))
     if not confirm():
         abort("Aborted by user.")
     else:
-        return download_url
+        return {"url": download_url, "browser": browser}

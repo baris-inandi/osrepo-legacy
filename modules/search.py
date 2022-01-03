@@ -4,7 +4,7 @@ from collections import OrderedDict
 from modules.repo import repo
 
 
-def search(keyword: str, success_treshold=0.5, limit=50):
+def search(keyword: str, success_treshold=0.67, limit=50):
     time_start = time()
     # parse keywords to a list
     result_dict, result_list = {}, []

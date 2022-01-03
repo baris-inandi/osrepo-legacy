@@ -1,5 +1,5 @@
 osr:
-  macOS:
+  macos:
     proprietary: true
     description: "A graphical operating system developed by Apple Inc."
     versions:
@@ -58,14 +58,14 @@ osr:
       v11.0.1:
         url: 'http://www.mediafire.com/file/dbfod9u5q9ii9nd/macOS_Big_Sur_11.0.1_%252820B29%2529.iso/file'
 
-  macOS Server:
+  macos-server:
     proprietary: true
     description: "a version of Apple's macOS intended to be used on servers"
     versions:
       v1.0:
         url: 'https://winworldpc.com/download/3dc39d24-c2bb-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
 
-  Apple A/UX:
+  apple-aux:
     proprietary: true
     description: "Apple's implementation of Unix for Macintosh computers."
     versions:
@@ -76,7 +76,7 @@ osr:
       A/UX 3:
         url: 'https://winworldpc.com/download/3e100254-18c3-9a11-c3a4-e284a2c3a570/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
 
-  WinDOS:
+  windos:
     proprietary: true
     description: "Older Windows versions based on DOS"
     versions:
@@ -91,7 +91,7 @@ osr:
       Windows 98:
         url: 'https://winworldpc.com/download/c3b4c382-3210-e280-9d7b-11c3a4c2ac5a/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
 
-  MS-DOS:
+  ms-dos:
     proprietary: true
     description: "A non-graphical operating system for PCs by Microsoft."
     versions:
@@ -100,13 +100,13 @@ osr:
       v6.22:
         url: 'https://archive.org/download/MS_DOS_6.22_MICROSOFT/MS%20DOS%206.22.zip'
 
-  FreeDOS:
+  freedos:
     description: "An open source iteration of DOS"
     versions:
       1.3-rc5:
         url: https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.3/previews/1.3-rc5/FD13-FullUSB.zip
 
-  Windows:
+  windows:
     proprietary: True
     description: "A group of proprietary graphical operating systems, by Microsoft"
     versions:
@@ -129,13 +129,13 @@ osr:
       "10":
         url: 'https://go.microsoft.com/fwlink/?LinkId=691209'
 
-  Chromium OS:
+  chromiumos:
     description: "Open source implementation of Google's ChromeOS"
     versions:
       "20211219231228":
         url: "https://chromium.arnoldthebat.co.uk/daily//CARMOS-20211219231228.img.7z"
 
-  FreeBSD:
+  freebsd:
     description: "A Unix-like operating system descended from BSD"
     versions:
       # TODO: browser: true should make the url open in the browser instead of being directly downloaded.
@@ -161,16 +161,47 @@ osr:
         browser: true
         url: 'https://download.freebsd.org/ftp/releases/ISO-IMAGES/11.4/'
 
-  TempleOS:
+  templeos:
     description: "A biblical-themed operating system designed to be the Third Temple prophesied in the Bible"
     versions:
       latest:
         url: 'https://templeos.org/Downloads/TempleOS.ISO'
 
+  ubuntu:
+    description: "A Linux distribution based on Debian composed (mostly) of open-source software."
+    versions:
+      "21.10":
+        url: "https://releases.ubuntu.com/21.10/ubuntu-21.10-desktop-amd64.iso"
+      "20.10":
+        url: "http://old-releases.ubuntu.com/releases/groovy/ubuntu-20.10-desktop-amd64.iso"
+      "20.04":
+        url: "http://old-releases.ubuntu.com/releases/focal/ubuntu-20.04-beta-desktop-amd64.iso"
+      "19.10":
+        url: "http://old-releases.ubuntu.com/releases/eoan/ubuntu-19.10-desktop-amd64.iso"
+      "19.04":
+        url: "http://old-releases.ubuntu.com/releases/disco/ubuntu-19.04-desktop-amd64.iso"
+      "18.10":
+        url: "http://old-releases.ubuntu.com/releases/cosmic/ubuntu-18.10-desktop-amd64.iso"
+
+  arch:
+    description: "An independently developed Linux distribution that follows a rolling-release model."
+    versions:
+      "2022.01.01":
+        url: "http://mirror.rackspace.com/archlinux/iso/2022.01.01/archlinux-2022.01.01-x86_64.iso"
+      all:
+        url: "mirror.rackspace.com/archlinux/iso/"
+        browser: true
+
+  arch-linux-gui:
+    description: "A fast, offline graphical installer for Vanilla Arch Linux"
+    versions:
+      all:
+        url: "https://sourceforge.net/projects/arch-linux-gui/files/"
+        browser: true
+
 meta:
   authors:
     - baris-inandi
-    - FreeTurk
   about: |
-    A community driven project on bringing many OSs into one package. Now with less calories! Made with <3 by @baris-inandi and @FreeTurk
+    A community driven project on bringing many OSs into one package. Now with less calories! Made with <3 by @baris-inandi
   updated: 28-12-2021

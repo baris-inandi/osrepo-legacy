@@ -9,4 +9,8 @@ def main(name):
 
 
 if __name__ == "__main__":
-    cli.download_with_id(input("> "))
+    x = cli.search_os(input("> "))
+    print(x)
+    print(x)
+    print(x)
+    print(x)

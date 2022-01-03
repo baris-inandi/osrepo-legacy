@@ -9,7 +9,7 @@ from modules.select import select_os_version, confirm_download
 
 
 def search_os(keyword: str):
-    # osr list arch
+    # osr list Arch
     # returns the download URL of selected os/version.
     search_result, elapsed = search(keyword)
     if len(search_result) > 0:
