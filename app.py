@@ -1,5 +1,7 @@
 import click
 from modules import cli
+from modules.download import download
+from sys import argv
 
 
 @click.command("install")
@@ -9,8 +11,4 @@ def main(name):
 
 
 if __name__ == "__main__":
-    x = cli.search_os(input("> "))
-    print(x)
-    print(x)
-    print(x)
-    print(x)
+    download(cli.download_with_id(argv[1]))

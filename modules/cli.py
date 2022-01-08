@@ -1,7 +1,7 @@
 from modules import select
 from modules.search import search
 from modules.tools import abort
-from modules.repo import repo, repo_object
+from modules.repo import repo
 from modules.entry import Entry
 from modules.fmt import Fmt
 from modules.tools import confirm
@@ -23,7 +23,6 @@ def search_os(keyword: str):
 
 def list_all():
     # osr list *
-    # TODO: abort not working
     if confirm(msg="This will print out *ALL* OS entries. Are you sure?"):
         for index, name in enumerate(repo.keys()):
             print(Fmt.color("header", str(index + 1)), Entry(name), "\n")
