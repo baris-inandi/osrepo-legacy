@@ -47,6 +47,13 @@ class Entry:
             "green",
             f" [added by {version_contributor}]" if self.is_community else "")
 
+    def version_is_for_browser(self, version: str):
+        try:
+            x = self.meta["versions"][version]["browser"]
+        except KeyError:
+            return False
+        return False if x is None else True
+
     def __repr__(self):
         return self.formatted_path() + self.formatted_version_count(
         ) + "\n" + self.formatted_description()

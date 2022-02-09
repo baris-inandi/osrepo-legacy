@@ -1,10 +1,10 @@
-from modules import cli
+from modules import run
 from pprint import pprint
 
 if __name__ == "__main__":
     test_result = {
-        'download from search result': cli.search_os("templeos"),
-        'download with id': cli.download_with_id("templeos@latest"),
+        'download from search result': run.search_os("templeos"),
+        'download with id': run.download_with_id("templeos@latest"),
     }
     failed = []
     for k in test_result.items():

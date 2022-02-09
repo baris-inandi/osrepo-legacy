@@ -1,4 +1,7 @@
 from os import system
+import webbrowser
+from time import sleep
+from modules.tools import abort
 
 
 def download(d: dict):
@@ -9,6 +12,7 @@ def download(d: dict):
         system(f"wget {d['url']}")
     else:
         # open browser
-        print()
-        # TODO: implement browser handler
-        print("Handling with browser: ", d["url"])
+        print("Continue in browser.")
+        sleep(0.1)
+        webbrowser.open(d["url"], new=2)
+        abort()

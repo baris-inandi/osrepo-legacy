@@ -1,5 +1,5 @@
-import click
-from modules import cli
+""" import click
+from modules import commands
 from modules.download import download
 from sys import argv
 
@@ -11,4 +11,9 @@ def main(name):
 
 
 if __name__ == "__main__":
-    download(cli.download_with_id(argv[1]))
+    download(commands.download_with_id(argv[1]))
+ """
+
+from modules.cli import cli
+
+cli()
