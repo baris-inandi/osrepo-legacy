@@ -4,24 +4,24 @@ from modules.download import download
 from modules.update import update as update_repo
 
 
-@click.command()
+@click.command(help="Lists all available OS entries")
 def list():
     run.list_all()
 
 
-@click.command()
+@click.command(help="Searches the repository for a given keyword")
 @click.argument('query')
 def search(query: str):
     download(run.search_os(query))
 
 
-@click.command()
+@click.command(help="Installs OS from given identifier")
 @click.argument('_id')
 def install(_id: str):
     download(run.download_with_id(_id))
 
 
-@click.command()
+@click.command(help="Updates the repository")
 def update():
     update_repo()
 

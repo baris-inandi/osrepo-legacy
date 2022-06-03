@@ -3,6 +3,7 @@ from modules.fmt import Fmt
 
 
 class Entry:
+
     def __init__(self, name: str):
         self.name = str(name)
         self.meta = repo[name]
@@ -30,10 +31,10 @@ class Entry:
         desc_trail = proprietary_warning + desc_trail
         return f"  {desc_trail}{self.meta['description'][:150]}"
 
-    # (19 versions available)
+    # [19 versions available]
     def formatted_version_count(self):
         versions_count = len(self.meta["versions"])
-        return (Fmt.color("blue", f" ({versions_count} versions available)")
+        return (Fmt.color("blue", f" [{versions_count} versions available]")
                 if versions_count > 1 else Fmt.color(
                     "blue", f" {list(self.meta['versions'].keys())[0]}"))
 

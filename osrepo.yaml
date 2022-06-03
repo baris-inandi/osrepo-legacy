@@ -183,16 +183,16 @@ osr:
       "18.10":
         url: "http://old-releases.ubuntu.com/releases/cosmic/ubuntu-18.10-desktop-amd64.iso"
 
-  arch:
+  archlinux:
     description: "An independently developed Linux distribution that follows a rolling-release model."
     versions:
       "2022.01.01":
         url: "http://mirror.rackspace.com/archlinux/iso/2022.01.01/archlinux-2022.01.01-x86_64.iso"
-      all:
-        url: "mirror.rackspace.com/archlinux/iso/"
+      latest:
+        url: "http://mirror.rackspace.com/archlinux/iso/latest/"
         browser: true
 
-  arch-linux-gui:
+  archlinux-gui:
     description: "A fast, offline graphical installer for Vanilla Arch Linux"
     versions:
       all:
@@ -204,4 +204,4 @@ meta:
     - baris-inandi
   about: |
     A community driven project on bringing many OSs into one package. Now with less calories! Made with <3 by @baris-inandi
-  updated: 28-12-2021
+  updated: 3-6-2022
