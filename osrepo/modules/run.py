@@ -44,8 +44,10 @@ def download_with_id(os_id: str):
             version = os_id_list[1]
         else:
             version = select_os_version(current_entry)
-        return confirm_download(current_entry, version,
-                                current_entry.version_is_for_browser(version))
+        return confirm_download(
+            current_entry,
+            version,
+        )
 
     except Exception:
         abort()

@@ -1,7 +1,6 @@
 import click
 from modules import run
 from modules.download import download
-from modules.update import update as update_repo
 
 
 @click.command(help="Lists all available OS entries")
@@ -19,11 +18,6 @@ def search(query: str):
 @click.argument('_id')
 def install(_id: str):
     download(run.download_with_id(_id))
-
-
-@click.command(help="Updates the repository")
-def update():
-    update_repo()
 
 
 @click.group(help="CLI tool to manage full development cycle of projects")

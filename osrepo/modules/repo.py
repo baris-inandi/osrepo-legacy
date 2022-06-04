@@ -1,10 +1,12 @@
 from yaml import safe_load as load_yaml
+from os.path import expanduser
 
 
 class Repo:
+
     def __init__(self, repo_files: list[tuple]):
         # example repo_files format:
-        # [("osrepo.yaml", "core"), ("community.yaml", "community")]
+        # [("osrepo.yml", "core"), ("community.yml", "community")]
         sub_repo_list, repo = [], {}
         for file in repo_files:
             sub_repo_list.append(self.parse(*file))
@@ -20,5 +22,8 @@ class Repo:
         return loaded["osr"]
 
 
-repo_object = Repo([("community.yaml", "community"), ("osrepo.yaml", "core")])
+HOME_DIR = expanduser("~")
+repo_object = Repo([(f"{HOME_DIR}/.config/osr/repo/community.yml",
+                     "community"),
+                    (f"{HOME_DIR}/.config/osr/repo/osrepo.yml", "core")])
 repo = repo_object.repo

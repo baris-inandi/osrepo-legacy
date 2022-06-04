@@ -10,3 +10,15 @@
 - EndeavourOS
 - gentoo
 - ubuntu flavors
+- nix os
+- mx linux
+- garuda
+- Solus
+
+REWRITE THIS IN RUST!
+REWRITE THIS IN RUST!
+REWRITE THIS IN RUST!
+REWRITE THIS IN RUST!
+REWRITE THIS IN RUST!
+REWRITE THIS IN RUST!
+REWRITE THIS IN RUST!
